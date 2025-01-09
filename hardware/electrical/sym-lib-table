@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "HexTrack")(type "KiCad")(uri "${KIPRJMOD}/Lib/HexTrack.kicad_sym")(options "")(descr ""))
+  (lib (name "TX8-1")(type "KiCad")(uri "${KIPRJMOD}/Lib/TX8-1.kicad_sym")(options "")(descr ""))
+)

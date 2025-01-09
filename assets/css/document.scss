@@ -1,0 +1,14 @@
+---
+---
+
+@import "main";
+
+main > * {
+    width: 100%;
+}
+
+@for $i from 1 through 6 {
+    h#{$i} {
+      font-weight: 600;
+    }
+  }

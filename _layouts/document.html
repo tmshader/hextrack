@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang={{ page.lang | default: "en" }}>
+<head>
+  {% include header.html %}
+
+  <link rel="stylesheet" href="{{ "/assets/css/document.css" | relative_url }}" />
+</head>
+<body>
+  <main class="doc">
+    {{ content }}
+  </main>
+
+  {% include version.html %}
+</body>
+</html>

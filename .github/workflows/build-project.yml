@@ -1,0 +1,218 @@
+name: "Project Build"
+
+on:
+  workflow_call:
+    inputs:
+      PROJECT_NAME:
+        required: true
+        type: string
+      PROJECT_PATH:
+        required: true
+        type: string
+      RENDER_ACTION_ID:
+        required: true
+        type: number
+
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    container: ghcr.io/inti-cmnb/kicad8_auto_full:latest
+    steps:
+      - name: KiBot
+        uses: tmshader/hextrack/.github/kibot@main
+        with:
+          PROJECT_PATH: ${{ inputs.PROJECT_PATH }}
+          PROJECT_NAME: ${{ inputs.PROJECT_NAME }}
+          KIBOT_CONFIG: preflight
+          KIBOT_OUTPUT: output
+
+      - name: "Setup jq"
+        uses: dcarbone/install-jq-action@v3
+
+      - name: Parse ERC
+        run: |
+          erc_warnings=$(cat output/${{ inputs.PROJECT_NAME }}-erc.json | jq '[try .violations[] | select(.severity == "warning")] | length')
+          erc_errors=$(cat output/${{ inputs.PROJECT_NAME }}-erc.json | jq '[try .violations[] | select(.severity == "error")] | length')
+          cat <<EOF > output/erc_validation.md
+          - **Errors**: $erc_errors
+          - **Warnings**: $erc_warnings
+          - **Link**: [HTML Report](${{ inputs.PROJECT_NAME }}-erc.html)
+          EOF
+          cat output/erc_validation.md
+
+      - name: Parse DRC
+        run: |
+          drc_warnings=$(cat output/${{ inputs.PROJECT_NAME }}-drc.json | jq '[try .violations[] | select(.severity == "warning")] | length')
+          drc_errors=$(cat output/${{ inputs.PROJECT_NAME }}-drc.json | jq '[try .violations[] | select(.severity == "error")] | length')
+          cat <<EOF > output/drc_validation.md
+          - **Errors**: $drc_errors
+          - **Warnings**: $drc_warnings
+          - **Link**: [HTML Report](${{ inputs.PROJECT_NAME }}-drc.html)
+          EOF
+          cat output/drc_validation.md
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.PROJECT_NAME }}
+          path: output
+
+  report:
+    runs-on: ubuntu-latest
+    container: ghcr.io/inti-cmnb/kicad8_auto_full:latest
+    steps:
+      - name: KiBot
+        uses: tmshader/hextrack/.github/kibot@main
+        with:
+          PROJECT_PATH: ${{ inputs.PROJECT_PATH }}
+          PROJECT_NAME: ${{ inputs.PROJECT_NAME }}
+          KIBOT_CONFIG: config
+          KIBOT_OUTPUT: output
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.PROJECT_NAME }}-report
+          path: output
+
+  pcbprint:
+    runs-on: ubuntu-latest
+    container: ghcr.io/inti-cmnb/kicad8_auto_full:latest
+    steps:
+      - name: KiBot
+        uses: tmshader/hextrack/.github/kibot@main
+        with:
+          PROJECT_PATH: ${{ inputs.PROJECT_PATH }}
+          PROJECT_NAME: ${{ inputs.PROJECT_NAME }}
+          KIBOT_CONFIG: pcbprint
+          KIBOT_OUTPUT: output
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.PROJECT_NAME }}-pcbprint
+          path: output
+
+  render_angled:
+    runs-on: ubuntu-latest
+    container: ghcr.io/inti-cmnb/kicad8_auto_full:latest
+    if: ${{ inputs.RENDER_ACTION_ID == '0' }}
+    steps:
+      - name: KiBot
+        uses: tmshader/hextrack/.github/kibot@main
+        with:
+          PROJECT_PATH: ${{ inputs.PROJECT_PATH }}
+          PROJECT_NAME: ${{ inputs.PROJECT_NAME }}
+          KIBOT_CONFIG: render_angled
+          KIBOT_OUTPUT: output
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.PROJECT_NAME }}-render_angled
+          path: output
+
+  render_top:
+    runs-on: ubuntu-latest
+    container: ghcr.io/inti-cmnb/kicad8_auto_full:latest
+    if: ${{ inputs.RENDER_ACTION_ID == '0' }}
+    steps:
+      - name: KiBot
+        uses: tmshader/hextrack/.github/kibot@main
+        with:
+          PROJECT_PATH: ${{ inputs.PROJECT_PATH }}
+          PROJECT_NAME: ${{ inputs.PROJECT_NAME }}
+          KIBOT_CONFIG: render_top
+          KIBOT_OUTPUT: output
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.PROJECT_NAME }}-render_top
+          path: output
+
+  render_bottom:
+    runs-on: ubuntu-latest
+    container: ghcr.io/inti-cmnb/kicad8_auto_full:latest
+    if: ${{ inputs.RENDER_ACTION_ID == '0' }}
+    steps:
+      - name: KiBot
+        uses: tmshader/hextrack/.github/kibot@main
+        with:
+          PROJECT_PATH: ${{ inputs.PROJECT_PATH }}
+          PROJECT_NAME: ${{ inputs.PROJECT_NAME }}
+          KIBOT_CONFIG: render_bottom
+          KIBOT_OUTPUT: output
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.PROJECT_NAME }}-render_bottom
+          path: output
+
+  reuse-renders:
+    runs-on: ubuntu-latest
+    if: ${{ inputs.RENDER_ACTION_ID != '0' }}
+    steps:
+      - name: Download "render_angled" Artifact
+        if: ${{ inputs.RENDER_ACTION_ID != '0' }}
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ inputs.PROJECT_NAME }}-render_angled
+          path: render_angled
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          run-id: ${{ inputs.RENDER_ACTION_ID }}
+
+      - name: Download "render_top" Artifact
+        if: ${{ inputs.RENDER_ACTION_ID != '0' }}
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ inputs.PROJECT_NAME }}-render_top
+          path: render_top
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          run-id: ${{ inputs.RENDER_ACTION_ID }}
+
+      - name: Download "render_bottom" Artifact
+        if: ${{ inputs.RENDER_ACTION_ID != '0' }}
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ inputs.PROJECT_NAME }}-render_bottom
+          path: render_bottom
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          run-id: ${{ inputs.RENDER_ACTION_ID }}
+
+      - name: Upload "render_angled" Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.PROJECT_NAME }}-render_angled
+          path: render_angled
+
+      - name: Upload "render_top" Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.PROJECT_NAME }}-render_top
+          path: render_top
+
+      - name: Upload "render_bottom" Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.PROJECT_NAME }}-render_bottom
+          path: render_bottom
+
+  step:
+    runs-on: ubuntu-latest
+    container: ghcr.io/inti-cmnb/kicad8_auto_full:latest
+    steps:
+      - name: KiBot
+        uses: tmshader/hextrack/.github/kibot@main
+        with:
+          PROJECT_PATH: ${{ inputs.PROJECT_PATH }}
+          PROJECT_NAME: ${{ inputs.PROJECT_NAME }}
+          KIBOT_CONFIG: step
+          KIBOT_OUTPUT: output
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.PROJECT_NAME }}-step
+          path: output

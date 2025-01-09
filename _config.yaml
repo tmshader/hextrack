@@ -1,0 +1,16 @@
+title: HexTrack
+author: TMShader
+url: https://hextrack.tmshader.me
+description: >
+  A 3D printable hexagonal trackball.
+
+permalink: /:slug
+
+highlighter: rouge
+
+sass:
+  style: :compressed
+
+plugins:
+  - jekyll-feed
+  - jemoji

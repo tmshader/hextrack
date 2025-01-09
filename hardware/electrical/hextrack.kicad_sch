@@ -1,0 +1,243 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "e03ae3c5-ddb7-48ac-a408-9dcc58a57689")
+	(paper "A4")
+	(title_block
+		(title "HexTrack PCB")
+		(date "2025-01-09")
+		(rev "v0.0.1")
+		(company "TMShader")
+		(comment 9 "HexTrack")
+	)
+	(lib_symbols)
+	(text "Uses the onboard LDO of the\nnRF52840 chip to convert +5V\nto +1.8V"
+		(exclude_from_sim no)
+		(at 24.13 128.27 0)
+		(effects
+			(font
+				(face "Lexend")
+				(size 3 3)
+				(thickness 0.375)
+			)
+			(justify left top)
+		)
+		(uuid "015c4db5-c9f8-4940-854d-0c199134b822")
+	)
+	(text "In Development"
+		(exclude_from_sim no)
+		(at 19.05 35.56 0)
+		(effects
+			(font
+				(face "Lexend")
+				(size 3 3)
+				(thickness 0.508)
+				(italic yes)
+			)
+			(justify left top)
+		)
+		(uuid "25219a39-3b64-448b-a6a5-74dc94b95a44")
+	)
+	(text "${REVISION}"
+		(exclude_from_sim no)
+		(at 278.13 25.4 0)
+		(effects
+			(font
+				(face "Lexend")
+				(size 4 4)
+				(thickness 0.508)
+			)
+			(justify right top)
+		)
+		(uuid "26e3d3dc-8226-47a0-a947-a162b5cd8d81")
+	)
+	(text "Powered by an nRF52840 chip"
+		(exclude_from_sim no)
+		(at 24.13 121.92 0)
+		(effects
+			(font
+				(face "Lexend")
+				(size 3 3)
+				(thickness 0.375)
+			)
+			(justify left top)
+		)
+		(uuid "27ffb454-57a2-4e27-bbb9-637d0f573dae")
+	)
+	(text "-"
+		(exclude_from_sim no)
+		(at 21.59 115.57 0)
+		(effects
+			(font
+				(face "Lexend")
+				(size 3 3)
+				(thickness 0.375)
+			)
+			(justify left top)
+		)
+		(uuid "428199ce-2f20-4de1-96b7-1979b9bd00ab")
+	)
+	(text "-"
+		(exclude_from_sim no)
+		(at 21.59 128.27 0)
+		(effects
+			(font
+				(face "Lexend")
+				(size 3 3)
+				(thickness 0.375)
+			)
+			(justify left top)
+		)
+		(uuid "798f75ca-d3ee-4d59-ba2c-0eb556a7414e")
+	)
+	(text "PMW3389-based controller PCB for the\nHexTrack open-source Trackball."
+		(exclude_from_sim no)
+		(at 19.05 50.8 0)
+		(effects
+			(font
+				(face "Lexend")
+				(size 4 4)
+				(thickness 0.508)
+			)
+			(justify left top)
+		)
+		(uuid "87519002-c7b3-4520-bfaa-3dbaef9253cf")
+	)
+	(text "${TITLE}\n"
+		(exclude_from_sim no)
+		(at 19.05 25.4 0)
+		(effects
+			(font
+				(face "Lexend")
+				(size 8 8)
+				(thickness 1.6256)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "9cc20602-27ef-4462-85ec-8061b6865638")
+	)
+	(text "Uses +1.8V for SPI and power"
+		(exclude_from_sim no)
+		(at 24.13 109.22 0)
+		(effects
+			(font
+				(face "Lexend")
+				(size 3 3)
+				(thickness 0.375)
+			)
+			(justify left top)
+		)
+		(uuid "a39ef3e2-0e72-46b6-87a8-a59e8e755fb5")
+	)
+	(text "Has USB ESD protection"
+		(exclude_from_sim no)
+		(at 24.13 115.57 0)
+		(effects
+			(font
+				(face "Lexend")
+				(size 3 3)
+				(thickness 0.375)
+			)
+			(justify left top)
+		)
+		(uuid "a480356e-7e56-441c-8887-f17367ed1154")
+	)
+	(text "-"
+		(exclude_from_sim no)
+		(at 21.59 121.92 0)
+		(effects
+			(font
+				(face "Lexend")
+				(size 3 3)
+				(thickness 0.375)
+			)
+			(justify left top)
+		)
+		(uuid "a9547a0a-82c9-4388-bad5-907b279d7789")
+	)
+	(text "${ISSUE_DATE}"
+		(exclude_from_sim no)
+		(at 278.13 31.75 0)
+		(effects
+			(font
+				(face "Lexend")
+				(size 4 4)
+				(thickness 0.5715)
+			)
+			(justify right top)
+		)
+		(uuid "c99ab81a-0b79-41e8-98e9-77fa69856c2d")
+	)
+	(text "Features"
+		(exclude_from_sim no)
+		(at 19.05 100.33 0)
+		(effects
+			(font
+				(face "Lexend")
+				(size 4 4)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "e91592fe-841d-4bbd-af74-b0128f1ef643")
+	)
+	(text "-"
+		(exclude_from_sim no)
+		(at 21.59 109.22 0)
+		(effects
+			(font
+				(face "Lexend")
+				(size 3 3)
+				(thickness 0.375)
+			)
+			(justify left top)
+		)
+		(uuid "eb237d74-a78f-47a8-bd06-ef087a27bf3e")
+	)
+	(sheet
+		(at 19.05 72.39)
+		(size 38.1 12.7)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9836e963-ec32-4c01-99da-5c973017755a")
+		(property "Sheetname" "Block Diagram"
+			(at 38.1 78.74 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 2 2)
+				)
+			)
+		)
+		(property "Sheetfile" "block_diagram.kicad_sch"
+			(at 19.05 85.6746 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "hextrack"
+				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)

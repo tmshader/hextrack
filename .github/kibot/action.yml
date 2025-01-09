@@ -1,0 +1,63 @@
+name: Build KiBot
+description: Clone repo and run KiBot on it
+
+inputs:
+  PROJECT_PATH:
+    description: The path of the KiCad project in the repo
+    required: true
+  PROJECT_NAME:
+    description: The name of the KiCad project
+    required: true
+  KIBOT_CONFIG:
+    description: The name of the KiBot config file
+    required: true
+  KIBOT_OUTPUT:
+    description: The name of the KiBot output directory
+    required: true
+  BOARD_PATH:
+    description: Optional overwrite for the PCB path
+    required: false
+  ARTIFACT:
+    description: Optional artifact to download
+    required: false
+    default: ""
+  ARTIFACT_PATH:
+    description: Path for the artifact download
+    required: false
+    default: "artifact"
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        sparse-checkout: "${{ inputs.PROJECT_PATH }}"
+        sparse-checkout-cone-mode: false
+
+    - name: Move files up
+      shell: sh
+      run: mv ./${{ inputs.PROJECT_PATH }}/* .
+
+    - name: Remove old files
+      shell: sh
+      run: rm -r hardware/
+
+    - name: Download artifact
+      uses: actions/download-artifact@v4
+      if: inputs.ARTIFACT != ''
+      with:
+        name: ${{ inputs.ARTIFACT }}
+        path: ${{ inputs.ARTIFACT_PATH }}
+
+    - name: What do we have here?
+      shell: sh
+      run: find .
+
+    - name: Run Kibot
+      uses: INTI-CMNB/KiBot@v2_k8
+      with:
+        config: "kibot/${{ inputs.KIBOT_CONFIG }}.kibot.yaml"
+        dir: ${{ inputs.KIBOT_OUTPUT }}
+        schema: "${{ inputs.PROJECT_NAME }}.kicad_sch"
+        board: "${{ inputs.BOARD_PATH || inputs.PROJECT_NAME }}.kicad_pcb"

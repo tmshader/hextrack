@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "HexTrack")(type "KiCad")(uri "${KIPRJMOD}/Lib/HexTrack.pretty")(options "")(descr ""))
+)

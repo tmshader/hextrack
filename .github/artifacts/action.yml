@@ -1,0 +1,61 @@
+name: Artifact builder
+description: Download and move artifacts
+
+inputs:
+  PROJECT_NAME:
+    description: The name of the KiCad project
+    required: true
+  GITHUB_TOKEN:
+    description: secrets.GITHUB_TOKEN
+    required: true
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Download artifact
+      uses: actions/download-artifact@v4
+      with:
+        path: output
+        github-token: ${{ inputs.GITHUB_TOKEN }}
+        # run-id: 12682429739
+
+    # - name: Download artifact
+    #   uses: actions/download-artifact@v4
+    #   with:
+    #     name: ${{ inputs.PROJECT_NAME }}
+    #     path: output
+
+    - name: Move artifact files
+      shell: sh
+      run: |
+        find output/
+        mkdir export
+        mkdir html
+        mkdir images
+        mkdir documents
+        mv output/${{ inputs.PROJECT_NAME }}/drc_validation.md                                                          ./${{ inputs.PROJECT_NAME }}-drc_validation.md
+        mv output/${{ inputs.PROJECT_NAME }}/erc_validation.md                                                          ./${{ inputs.PROJECT_NAME }}-erc_validation.md
+        mv output/${{ inputs.PROJECT_NAME }}/${{ inputs.PROJECT_NAME }}-erc.html                                        ./${{ inputs.PROJECT_NAME }}-erc.html
+        mv output/${{ inputs.PROJECT_NAME }}/${{ inputs.PROJECT_NAME }}-drc.html                                        ./${{ inputs.PROJECT_NAME }}-drc.html
+        mv output/${{ inputs.PROJECT_NAME }}-step/Step/${{ inputs.PROJECT_NAME }}-3D.step                               ./${{ inputs.PROJECT_NAME }}-3D.step
+        mv output/${{ inputs.PROJECT_NAME }}-report/report/${{ inputs.PROJECT_NAME }}-report.txt                        ./${{ inputs.PROJECT_NAME }}-report.md
+        mv output/${{ inputs.PROJECT_NAME }}-render_top/${{ inputs.PROJECT_NAME }}-3D_blender_top.png                   ./images/${{ inputs.PROJECT_NAME }}-3D_blender_top.png
+        mv output/${{ inputs.PROJECT_NAME }}-render_bottom/${{ inputs.PROJECT_NAME }}-3D_blender_top.png                ./images/${{ inputs.PROJECT_NAME }}-3D_blender_bottom.png
+        mv output/${{ inputs.PROJECT_NAME }}-render_angled/${{ inputs.PROJECT_NAME }}-3D_blender_top.png                ./images/${{ inputs.PROJECT_NAME }}-3D_blender_angled.png
+        mv output/${{ inputs.PROJECT_NAME }}-report/IBOM/${{ inputs.PROJECT_NAME }}-ibom.html                           ./export/${{ inputs.PROJECT_NAME }}-ibom.html
+        mv output/${{ inputs.PROJECT_NAME }}-report/BOM/${{ inputs.PROJECT_NAME }}_bom.html                             ./export/${{ inputs.PROJECT_NAME }}-bom.html
+        mv output/${{ inputs.PROJECT_NAME }}-report/Schematic/${{ inputs.PROJECT_NAME }}-schematic-default.pdf          ./documents/${{ inputs.PROJECT_NAME }}-schematic-default.pdf
+        mv output/${{ inputs.PROJECT_NAME }}-report/Schematic/${{ inputs.PROJECT_NAME }}-schematic-mono.pdf             ./documents/${{ inputs.PROJECT_NAME }}-schematic-mono.pdf
+        mv output/${{ inputs.PROJECT_NAME }}-report/JLCPCB/${{ inputs.PROJECT_NAME }}-JLCPCB.zip                        ./export/${{ inputs.PROJECT_NAME }}-JLCPCB.zip
+        mv output/${{ inputs.PROJECT_NAME }}-report/JLCPCB/BOM/${{ inputs.PROJECT_NAME }}_bom_jlc.csv                   ./export/${{ inputs.PROJECT_NAME }}_bom_jlc.csv
+        mv output/${{ inputs.PROJECT_NAME }}-report/JLCPCB/PickAndPlace/${{ inputs.PROJECT_NAME }}_cpl_jlc.csv          ./export/${{ inputs.PROJECT_NAME }}_cpl_jlc.csv
+
+        mv output/${{ inputs.PROJECT_NAME }}-pcbprint/PCBPrint/${{ inputs.PROJECT_NAME }}-assembly-fabrication.pdf       ./documents/${{ inputs.PROJECT_NAME }}-fabrication.pdf
+        mv output/${{ inputs.PROJECT_NAME }}-pcbprint/PCBPrint/${{ inputs.PROJECT_NAME }}-assembly-assembly.pdf         ./documents/${{ inputs.PROJECT_NAME }}-assembly.pdf
+        rm -rf output
+        ls -l
+        ls -l export
+        find .
+#        mv output/${{ inputs.PROJECT_NAME }}-jlcpcb/JLCPCB/${{ inputs.PROJECT_NAME }}-panel-JLCPCB.zip                  ./export/${{ inputs.PROJECT_NAME }}-panel-JLCPCB.zip
+#        mv output/${{ inputs.PROJECT_NAME }}-jlcpcb/JLCPCB/BOM/${{ inputs.PROJECT_NAME }}_bom_jlc.csv                   ./export/${{ inputs.PROJECT_NAME }}-panel_bom_jlc.csv
+#        mv output/${{ inputs.PROJECT_NAME }}-jlcpcb/JLCPCB/PickAndPlace/${{ inputs.PROJECT_NAME }}-panel_cpl_jlc.csv    ./export/${{ inputs.PROJECT_NAME }}-panel_cpl_jlc.csv

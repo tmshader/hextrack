@@ -1,0 +1,135 @@
+kibot:
+  version: 1
+
+globals:
+  resources_dir: resources
+  field_lcsc_part: "LCSC"
+  solder_mask_color: blue
+  pcb_finish: ENIG
+
+filters:
+  - name: only_jlc_parts
+    comment: "Only parts with JLC (LCSC) code"
+    type: generic
+    include_only:
+      - column: "LCSC"
+        regex: '^C\d+'
+
+variants:
+  - name: rotated
+    comment: "Rotate for JLCPCB"
+    type: kibom
+    variant: rotated
+    pre_transform: _rot_footprint_jlcpcb
+
+outputs:
+  - name: "pcb_print_fabrication"
+    type: pcb_print
+    dir: PCBPrint
+    options:
+      output: "%f-%i%I%v-fabrication.%x"
+      add_background: true
+      background_color: "#ffffff"
+      color_theme: "_builtin_default"
+      colored_pads: false
+      colored_vias: false
+      dpi: 1200
+      forced_edge_cuts_use_for_center: false
+      format: "PDF"
+      frame_plot_mechanism: "plot"
+      keep_temporal_files: false
+      invert_use_for_center: true
+      pages:
+        - sheet: "Fabrication"
+          sketch_pads_on_fab_layers: false
+          tent_vias: false
+          colored_holes: true
+          holes_color: "#ffffff"
+          sheet_reference_color: "#000000"
+          layers:
+            - layer: F.Cu
+              color: "#e2e2e2"
+            - layer: Edge.Cuts
+              use_for_center: false
+            - layer: F.Fab
+              color: "#818181"
+            - layer: Dimensions
+              color: "#000000"
+        - sheet: "Fabrication"
+          sketch_pads_on_fab_layers: false
+          tent_vias: false
+          colored_holes: true
+          holes_color: "#ffffff"
+          sheet_reference_color: "#000000"
+          layers:
+            - layer: Edge.Cuts
+              use_for_center: false
+            - layer: "Drill Map"
+              color: "#000000"
+        - sheet: "Fabrication"
+          scaling: 2
+          sketch_pads_on_fab_layers: true
+          colored_holes: true
+          holes_color: "#ffffff"
+          sheet_reference_color: "#000000"
+          layers:
+            - layer: F.Cu
+            - layer: "F.Cu Name"
+              color: "#000000"
+            - layer: Edge.Cuts
+              use_for_center: false
+              color: "#ffffff"
+        - sheet: "Fabrication"
+          scaling: 2
+          sketch_pads_on_fab_layers: true
+          colored_holes: true
+          holes_color: "#ffffff"
+          sheet_reference_color: "#000000"
+          layers:
+            - layer: B.Cu
+            - layer: "B.Cu Name"
+              color: "#000000"
+            - layer: Edge.Cuts
+              use_for_center: false
+              color: "#ffffff"
+
+  - name: "pcb_print_assembly"
+    type: pcb_print
+    dir: PCBPrint
+    options:
+      output: "%f-%i%I%v-assembly.%x"
+      add_background: true
+      background_color: "#ffffff"
+      color_theme: "_builtin_default"
+      colored_pads: false
+      colored_vias: false
+      dpi: 1200
+      forced_edge_cuts_use_for_center: false
+      format: "PDF"
+      frame_plot_mechanism: "plot"
+      keep_temporal_files: false
+      invert_use_for_center: true
+      realistic_solder_mask: false
+      pages:
+        - sheet: "Assembly"
+          sketch_pads_on_fab_layers: false
+          tent_vias: false
+          colored_holes: true
+          holes_color: "#ffffff"
+          sheet_reference_color: "#000000"
+          layers:
+            - layer: F.Cu
+              color: "#eedab5"
+            - layer: F.Mask
+              color: "#b9b9b9"
+            - layer: F.Silkscreen
+              color: "#db9de1"
+            - layer: F.Paste
+              color: "#e1a98e"
+            - layer: F.Fab
+              color: "#744679"
+            - layer: Edge.Cuts
+              use_for_center: false
+              color: "#000000"
+            - layer: Assembly
+              color: "#000000"
