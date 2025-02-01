@@ -1,0 +1,210 @@
+(footprint "LED_SK6812MINI"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "D1"
+		(at 0 2.1 0)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "dbcc417b-89f0-450f-8d6a-a98208edbf30")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Value" "SK6812MINI-E"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "cc20861d-63cc-4e6c-9773-fa5c6ebe46ba")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f1d2ca7a-d6cf-42e9-949b-a0274900c1e3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d85a3f32-3fa8-4d07-80db-29a3be585c54")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "RGB LED with integrated controller"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "37e064d1-62bf-421c-9c3f-76d8f042eefc")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C5149201"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9b649497-f517-4ef6-9cae-27a3bc0b3253")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_poly
+		(pts
+			(xy -2.8 -1.4) (xy -2.2 -1.4) (xy -2.2 -2)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill solid)
+		(layer "B.SilkS")
+		(uuid "0a1a2aa3-c074-4250-8c48-0ed323273186")
+	)
+	(fp_line
+		(start -1.600001 -1.4)
+		(end -1.6 1.400001)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Cmts.User")
+		(uuid "ac020fc4-2145-4c68-ad67-ee8970234067")
+	)
+	(fp_line
+		(start -1.6 1.400001)
+		(end 1.600001 1.4)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Cmts.User")
+		(uuid "fd5cbb44-342b-4fea-bf81-1569fe22d67b")
+	)
+	(fp_line
+		(start 1.6 -1.400001)
+		(end -1.600001 -1.4)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Cmts.User")
+		(uuid "f5161071-66e4-4dd8-bf5f-7458f24e631c")
+	)
+	(fp_line
+		(start 1.600001 1.4)
+		(end 1.6 -1.400001)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Cmts.User")
+		(uuid "eedf7a0c-6aac-4f0a-84c2-ee09522d99b4")
+	)
+	(fp_line
+		(start -1.7 -1.5)
+		(end -1.7 1.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "2829872e-cfd3-4733-9b9b-53ce631ac5e5")
+	)
+	(fp_line
+		(start -1.7 1.5)
+		(end 1.7 1.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "cfcee2d6-6a00-46f0-8a87-b4df8d400de9")
+	)
+	(fp_line
+		(start 1.7 -1.5)
+		(end -1.7 -1.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "dccad0ab-b862-4b74-a59a-f3bbaa13ab32")
+	)
+	(fp_line
+		(start 1.7 1.5)
+		(end 1.7 -1.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "9154e5e4-9b30-4000-96b6-688405811810")
+	)
+	(pad "1" smd rect
+		(at 2.55 0.75)
+		(size 1.7 0.82)
+		(layers "B.Cu" "B.Paste" "B.Mask")
+		(uuid "a253ff88-d61b-4e38-b8f6-badee97103be")
+	)
+	(pad "2" smd rect
+		(at 2.55 -0.75)
+		(size 1.7 0.82)
+		(layers "B.Cu" "B.Paste" "B.Mask")
+		(uuid "a6bc2a56-55eb-46f6-a466-652ff6f48eb0")
+	)
+	(pad "3" smd roundrect
+		(at -2.55 -0.75)
+		(size 1.7 0.82)
+		(layers "B.Cu" "B.Paste" "B.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "eccfa287-eff9-49b3-bfba-202b5ed5c942")
+	)
+	(pad "4" smd rect
+		(at -2.55 0.75)
+		(size 1.7 0.82)
+		(layers "B.Cu" "B.Paste" "B.Mask")
+		(uuid "c9e0abcb-72ae-4c0a-8e59-4522efd45274")
+	)
+	(model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step"
+		(offset
+			(xyz 0 0 -1.65)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 90 180 0)
+		)
+	)
+)

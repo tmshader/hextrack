@@ -1,0 +1,1816 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "b3f7bcb3-bfd2-489f-bfc5-4eba1ec5e1ed")
+	(paper "A4")
+	(title_block
+		(title "HexTrack PCB")
+		(date "2025-02-01")
+		(rev "v0.0.2")
+		(company "TMShader")
+		(comment 9 "HexTrack")
+	)
+	(lib_symbols
+		(symbol "Device:C"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "HexTrack:AP2204K-1.8"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RG1"
+				(at 0 13.97 0)
+				(effects
+					(font
+						(face "Lexend")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AP2204K-1.8"
+				(at 0 11.43 0)
+				(effects
+					(font
+						(face "Lexend")
+						(size 1.27 1.27)
+						(thickness 0.254)
+						(bold yes)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+				(at 0 8.255 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2204.pdf"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "150mA low dropout linear regulator, wide input voltage range, 1.8V fixed positive output, SOT-23-5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C23380831"
+				(at 0 8.89 0)
+				(effects
+					(font
+						(face "Lexend")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "linear regulator ldo fixed positive"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23?5*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AP2204K-1.8_0_1"
+				(rectangle
+					(start -6.35 6.35)
+					(end 6.35 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "AP2204K-1.8_1_1"
+				(pin power_in line
+					(at -8.89 3.81 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -8.89 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -8.89 0 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 5.08 0 180)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 8.89 3.81 180)
+					(length 2.54)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "HexTrack:AP2204K-3.3"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RG1"
+				(at 0 13.97 0)
+				(effects
+					(font
+						(face "Lexend")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AP2204K-3.3"
+				(at 0 11.43 0)
+				(effects
+					(font
+						(face "Lexend")
+						(size 1.27 1.27)
+						(thickness 0.254)
+						(bold yes)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+				(at 0 8.255 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2204.pdf"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "150mA low dropout linear regulator, wide input voltage range, 3.3V fixed positive output, SOT-23-5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C23380833"
+				(at 0 8.89 0)
+				(effects
+					(font
+						(face "Lexend")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "linear regulator ldo fixed positive"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23?5*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AP2204K-3.3_0_1"
+				(rectangle
+					(start -6.35 6.35)
+					(end 6.35 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "AP2204K-3.3_1_1"
+				(pin power_in line
+					(at -8.89 3.81 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -8.89 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -8.89 0 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 5.08 0 180)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 8.89 3.81 180)
+					(length 2.54)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 140.97 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9c222701-ba97-4c7d-9bbc-e53dc7694085")
+	)
+	(junction
+		(at 129.54 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b168c5ea-05f4-4629-9b9c-4c52915f02bb")
+	)
+	(junction
+		(at 166.37 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b796a5db-1429-47f1-853f-2744106f80c3")
+	)
+	(junction
+		(at 140.97 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d6d9fdc3-2305-4889-9db5-a671c36ed949")
+	)
+	(junction
+		(at 166.37 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e5da70cf-bb70-485a-a872-7ee0265db7a9")
+	)
+	(junction
+		(at 129.54 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e9e01ec1-5150-4a55-948c-da96b54fdca7")
+	)
+	(wire
+		(pts
+			(xy 140.97 119.38) (xy 144.78 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08b2505c-320a-41a6-ba63-4b7fac92af5c")
+	)
+	(wire
+		(pts
+			(xy 166.37 119.38) (xy 162.56 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24ce5549-32fb-4982-9512-410db1c0aa12")
+	)
+	(wire
+		(pts
+			(xy 166.37 85.09) (xy 162.56 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28f9cd90-64fa-4fd0-865a-e68bebbdc000")
+	)
+	(wire
+		(pts
+			(xy 129.54 88.9) (xy 129.54 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a8eb310-3f77-4931-9128-b64a65ea1b5f")
+	)
+	(wire
+		(pts
+			(xy 170.18 119.38) (xy 166.37 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ec22624-6fc5-446b-b2bb-76c8df5d13c7")
+	)
+	(wire
+		(pts
+			(xy 125.73 119.38) (xy 129.54 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3388ba06-50d7-43f5-b7ce-1ec7a0469af3")
+	)
+	(wire
+		(pts
+			(xy 166.37 123.19) (xy 166.37 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a74b423-ca1c-4fd1-bfe3-cd27e7337964")
+	)
+	(wire
+		(pts
+			(xy 140.97 119.38) (xy 129.54 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4009af97-cdf0-414b-a149-0e00e4d1e078")
+	)
+	(wire
+		(pts
+			(xy 166.37 88.9) (xy 166.37 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cc7a360-275a-46b5-894d-a9d450128d24")
+	)
+	(wire
+		(pts
+			(xy 140.97 85.09) (xy 129.54 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b1cfdee-cc7b-4370-96d6-822b59c42841")
+	)
+	(wire
+		(pts
+			(xy 140.97 123.19) (xy 140.97 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76c09943-1446-4268-b1f1-d0ad76fa85d6")
+	)
+	(wire
+		(pts
+			(xy 140.97 85.09) (xy 144.78 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7dd09d2d-02b7-4b68-be89-457e01deab9a")
+	)
+	(wire
+		(pts
+			(xy 125.73 85.09) (xy 129.54 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c76dcdb-24cb-419c-926b-c1936903d574")
+	)
+	(wire
+		(pts
+			(xy 144.78 88.9) (xy 140.97 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ebebafc-6f26-452e-80c8-855b042f9d3c")
+	)
+	(wire
+		(pts
+			(xy 170.18 85.09) (xy 166.37 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ef7808c-2943-4ef2-8d99-cfb3e0f9ce71")
+	)
+	(wire
+		(pts
+			(xy 144.78 123.19) (xy 140.97 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df13aca9-700b-4616-a796-9fcfde00be49")
+	)
+	(wire
+		(pts
+			(xy 140.97 88.9) (xy 140.97 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed93c384-23a0-436b-8c29-cb20ae9c4927")
+	)
+	(wire
+		(pts
+			(xy 129.54 123.19) (xy 129.54 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2e776f9-e230-4127-bf3b-66d273cc2dc2")
+	)
+	(text "${SHEETNAME}"
+		(exclude_from_sim no)
+		(at 19.05 25.4 0)
+		(effects
+			(font
+				(face "Lexend")
+				(size 8 8)
+				(thickness 1.6256)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "02d28c27-5c71-4cd8-9cf7-de1e08366858")
+	)
+	(hierarchical_label "+1.8V"
+		(shape output)
+		(at 170.18 85.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(face "Lexend")
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0d6ceb94-e874-4e57-a4b0-f75bb0a3c642")
+	)
+	(hierarchical_label "VBUS"
+		(shape input)
+		(at 125.73 119.38 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(face "Lexend")
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "23e25d4d-00a3-4e8f-9c2c-3d254f6044c8")
+	)
+	(hierarchical_label "+3.3V"
+		(shape output)
+		(at 170.18 119.38 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(face "Lexend")
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "23effece-f943-4a71-a75c-07c79eaace3f")
+	)
+	(hierarchical_label "VBUS"
+		(shape input)
+		(at 125.73 85.09 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(face "Lexend")
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a96b56dd-6bca-405f-8736-49db03d30d69")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 129.54 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "058e4867-6d2e-4f6b-9a6e-ecbcf6208a49")
+		(property "Reference" "#PWR09"
+			(at 129.54 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 129.54 100.33 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 129.54 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1cc469c4-a4e8-49da-a2cb-b01ea9a9db65")
+		)
+		(instances
+			(project "hextrack"
+				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/47cc176e-3777-4b9f-8c2c-1fa80616066f"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 129.54 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "06c20356-9868-4647-b23b-a91babbde79c")
+		(property "Reference" "#PWR012"
+			(at 129.54 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 129.54 134.62 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 129.54 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8fa6d0e3-2cb2-4eb9-87b9-d8e631412db5")
+		)
+		(instances
+			(project "hextrack"
+				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/47cc176e-3777-4b9f-8c2c-1fa80616066f"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 166.37 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "300e1013-b9ed-431f-be46-d14890a8e7d0")
+		(property "Reference" "#PWR013"
+			(at 166.37 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 166.37 134.62 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 166.37 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 166.37 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "14c14dfd-e3b1-46af-8f96-94f4459ffabc")
+		)
+		(instances
+			(project "hextrack"
+				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/47cc176e-3777-4b9f-8c2c-1fa80616066f"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 166.37 92.71 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3a303843-9dba-4049-9dd4-0381cfd10d0b")
+		(property "Reference" "C2"
+			(at 170.18 90.1699 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 170.18 92.71 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 167.3352 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 166.37 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 166.37 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C90540"
+			(at 170.18 95.2499 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "bdfb8446-f0b4-4f79-8cab-37a2c99c54e7")
+		)
+		(pin "2"
+			(uuid "eb56f23f-950f-4ccd-81f8-f0a88bd69543")
+		)
+		(instances
+			(project "hextrack"
+				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/47cc176e-3777-4b9f-8c2c-1fa80616066f"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 153.67 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "76a155bc-b037-46ea-8bba-efec92a84670")
+		(property "Reference" "#PWR014"
+			(at 153.67 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 153.67 135.89 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 153.67 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 153.67 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a67cf211-ba3e-4c71-b550-9622648147da")
+		)
+		(instances
+			(project "hextrack"
+				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/47cc176e-3777-4b9f-8c2c-1fa80616066f"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 129.54 127 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9c63cba1-9d6f-43d1-b0f2-3be4e92efeaa")
+		(property "Reference" "C3"
+			(at 133.35 124.4599 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 133.35 127 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 130.5052 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129.54 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 129.54 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C90540"
+			(at 133.35 129.5399 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "b33408b6-8b74-47dd-acaf-7aaf4eb8d51f")
+		)
+		(pin "2"
+			(uuid "8f2256fc-d014-4beb-a398-d2dbf31df280")
+		)
+		(instances
+			(project "hextrack"
+				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/47cc176e-3777-4b9f-8c2c-1fa80616066f"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 129.54 92.71 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a74ace42-e343-4a60-b53e-3f44bc39a24c")
+		(property "Reference" "C1"
+			(at 133.35 90.1699 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 133.35 92.71 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 130.5052 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129.54 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 129.54 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C90540"
+			(at 133.35 95.2499 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "e683ff3f-39d3-4611-8a60-8ab41cffca09")
+		)
+		(pin "2"
+			(uuid "91cc3ccf-f0ca-4c63-bd39-29c0b5a857d1")
+		)
+		(instances
+			(project "hextrack"
+				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/47cc176e-3777-4b9f-8c2c-1fa80616066f"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HexTrack:AP2204K-1.8")
+		(at 153.67 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b1fed18f-e77e-470d-a692-240113bab796")
+		(property "Reference" "U2"
+			(at 153.67 74.93 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AP2204K-1.8"
+			(at 153.67 77.47 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 153.67 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2204.pdf"
+			(at 153.67 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "150mA low dropout linear regulator, wide input voltage range, 1.8V fixed positive output, SOT-23-5"
+			(at 153.67 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23380831"
+			(at 153.67 80.01 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0e108cc3-8551-493f-a383-511f067557a4")
+		)
+		(pin "3"
+			(uuid "653926d1-9fde-457b-9fb4-d0f86cb1894b")
+		)
+		(pin "2"
+			(uuid "7c6a46bd-f7b7-4315-9d01-296aa1b40ba3")
+		)
+		(pin "4"
+			(uuid "7abb3d16-2c78-41bc-8e84-0b9e27d785b9")
+		)
+		(pin "5"
+			(uuid "1a9f5c59-bcde-4fe8-b8d2-ae6321829022")
+		)
+		(instances
+			(project ""
+				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/47cc176e-3777-4b9f-8c2c-1fa80616066f"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 166.37 127 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e600bff6-b8ed-4f1e-9a14-827e81620c2a")
+		(property "Reference" "C4"
+			(at 170.18 124.4599 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 170.18 127 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 167.3352 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 166.37 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 166.37 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C90540"
+			(at 170.18 129.5399 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "ecbee2c0-8a01-452b-bd7c-15d263fa44e6")
+		)
+		(pin "2"
+			(uuid "afcba9ab-4dbb-4c41-a0b0-3a4d1b982630")
+		)
+		(instances
+			(project "hextrack"
+				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/47cc176e-3777-4b9f-8c2c-1fa80616066f"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 166.37 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f76cf9be-c607-4b63-8bc7-e382385a6a09")
+		(property "Reference" "#PWR010"
+			(at 166.37 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 166.37 100.33 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 166.37 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 166.37 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cb826849-7608-4e03-bfbc-99314b8e9ee1")
+		)
+		(instances
+			(project "hextrack"
+				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/47cc176e-3777-4b9f-8c2c-1fa80616066f"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HexTrack:AP2204K-3.3")
+		(at 153.67 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fce75ef7-230d-434f-8aa9-c97875b7155f")
+		(property "Reference" "U3"
+			(at 153.67 109.22 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AP2204K-3.3"
+			(at 153.67 111.76 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 153.67 114.935 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2204.pdf"
+			(at 153.67 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "150mA low dropout linear regulator, wide input voltage range, 3.3V fixed positive output, SOT-23-5"
+			(at 153.67 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23380833"
+			(at 153.67 114.3 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "0ee5404f-df2c-48df-a2cf-4097eb7aed53")
+		)
+		(pin "4"
+			(uuid "84d37145-28a6-47b3-b1a3-1e0ace896096")
+		)
+		(pin "1"
+			(uuid "6f408531-4bfe-4c2f-84ad-dcdaae43718d")
+		)
+		(pin "2"
+			(uuid "b5690281-3cb7-49a3-998e-c51bd80d71ff")
+		)
+		(pin "3"
+			(uuid "d6838cb9-8e13-4e55-88fd-5279f0e4a6bb")
+		)
+		(instances
+			(project ""
+				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/47cc176e-3777-4b9f-8c2c-1fa80616066f"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 153.67 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fee25b6b-d4e1-4b3e-aa40-d33459eeb47e")
+		(property "Reference" "#PWR011"
+			(at 153.67 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 153.67 101.6 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 153.67 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 153.67 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b3a9fb0c-c929-4182-b460-c1c50b666451")
+		)
+		(instances
+			(project "hextrack"
+				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/47cc176e-3777-4b9f-8c2c-1fa80616066f"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

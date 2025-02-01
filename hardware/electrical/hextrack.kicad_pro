@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 0.25,
-          "width": 0.25
+          "drill": 0.7,
+          "height": 1.2,
+          "width": 1.2
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -221,7 +221,58 @@
       "mfg": "",
       "mpn": ""
     },
-    "layer_presets": [],
+    "layer_presets": [
+      {
+        "activeLayer": -2,
+        "layers": [
+          31,
+          32,
+          34,
+          36,
+          38,
+          44,
+          46,
+          48
+        ],
+        "name": "Back layers",
+        "renderLayers": [
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          133,
+          134,
+          135,
+          136,
+          138,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          157,
+          158,
+          159,
+          160,
+          161,
+          164,
+          165
+        ]
+      }
+    ],
     "viewports": []
   },
   "boards": [],
@@ -476,12 +527,46 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Power",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(0, 194, 0)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 12
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.1,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "RF",
+        "pcb_color": "rgb(194, 0, 194)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.1,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "SPI",
+        "pcb_color": "rgb(0, 0, 194)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
       },
       {
         "bus_width": 12,
@@ -498,6 +583,23 @@
         "track_width": 0.2,
         "via_diameter": 0.4,
         "via_drill": 0.2,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.1,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "USB",
+        "pcb_color": "rgb(0, 194, 194)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
         "wire_width": 6
       }
     ],
@@ -526,6 +628,38 @@
       {
         "netclass": "S_Via",
         "pattern": "*~{RESET}"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "*USB_D*"
+      },
+      {
+        "netclass": "SPI",
+        "pattern": "*MOSI"
+      },
+      {
+        "netclass": "SPI",
+        "pattern": "*MISO"
+      },
+      {
+        "netclass": "SPI",
+        "pattern": "*SCLK"
+      },
+      {
+        "netclass": "SPI",
+        "pattern": "*CS*"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "*/ND*"
+      },
+      {
+        "netclass": "RF",
+        "pattern": "*RF*"
+      },
+      {
+        "netclass": "RF",
+        "pattern": "*ANT*"
       }
     ]
   },
@@ -674,6 +808,10 @@
       "USB-C"
     ],
     [
+      "47cc176e-3777-4b9f-8c2c-1fa80616066f",
+      "Regulators"
+    ],
+    [
       "1feb3cee-82cd-45fc-9a10-745f1cbe257b",
       "MCU"
     ],
@@ -682,8 +820,12 @@
       "Sensor"
     ],
     [
+      "6ef21b2c-1eef-4c3e-9967-6fcfcd6d64cd",
+      "Switches"
+    ],
+    [
       "b1b45fc2-b729-4747-b7cc-9958adb1922a",
-      "Misc"
+      "Hardware"
     ]
   ],
   "text_variables": {}

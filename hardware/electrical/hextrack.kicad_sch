@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "HexTrack PCB")
-		(date "2025-01-09")
-		(rev "v0.0.1")
+		(date "2025-02-01")
+		(rev "v0.0.2")
 		(company "TMShader")
 		(comment 9 "HexTrack")
 	)

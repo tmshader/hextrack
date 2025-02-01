@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "HexTrack PCB")
-		(date "2025-01-09")
-		(rev "v0.0.1")
+		(date "2025-02-01")
+		(rev "v0.0.2")
 		(company "TMShader")
 		(comment 9 "HexTrack")
 	)
@@ -1542,7 +1542,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "03693970-2eb0-4b90-94ba-aebf99ddc83c")
-		(property "Reference" "R4"
+		(property "Reference" "R1"
 			(at 146.05 88.9 90)
 			(effects
 				(font
@@ -1609,7 +1609,7 @@
 		(instances
 			(project "hextrack"
 				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/b85208ae-6025-47c1-ac11-02f6f1e1bd30"
-					(reference "R4")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -1624,7 +1624,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "35042730-e101-4ff5-88c3-7c6fce50d883")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR07"
 			(at 165.1 121.92 0)
 			(effects
 				(font
@@ -1675,7 +1675,7 @@
 		(instances
 			(project "hextrack"
 				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/b85208ae-6025-47c1-ac11-02f6f1e1bd30"
-					(reference "#PWR016")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -1690,7 +1690,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "496dac43-44b9-4b58-9627-42aa25333b78")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR06"
 			(at 165.1 105.41 0)
 			(effects
 				(font
@@ -1741,7 +1741,7 @@
 		(instances
 			(project ""
 				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/b85208ae-6025-47c1-ac11-02f6f1e1bd30"
-					(reference "#PWR017")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -1756,7 +1756,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5a9a8d6f-3ac2-425c-a645-2b1221db5117")
-		(property "Reference" "USB1"
+		(property "Reference" "J1"
 			(at 128.27 72.39 0)
 			(effects
 				(font
@@ -1865,7 +1865,7 @@
 		(instances
 			(project ""
 				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/b85208ae-6025-47c1-ac11-02f6f1e1bd30"
-					(reference "USB1")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -1880,7 +1880,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "603453be-0e2d-4db0-b9c7-9346d1d3ac93")
-		(property "Reference" "R5"
+		(property "Reference" "R2"
 			(at 146.05 97.79 90)
 			(effects
 				(font
@@ -1947,7 +1947,7 @@
 		(instances
 			(project "hextrack"
 				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/b85208ae-6025-47c1-ac11-02f6f1e1bd30"
-					(reference "R5")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -2060,7 +2060,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8153611d-a06e-4718-9151-36ae1f1b99b6")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR08"
 			(at 128.27 140.97 0)
 			(effects
 				(font
@@ -2111,7 +2111,7 @@
 		(instances
 			(project "hextrack"
 				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/b85208ae-6025-47c1-ac11-02f6f1e1bd30"
-					(reference "#PWR014")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -2126,7 +2126,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b5bdda7d-4439-42d2-b9b2-f69a6c1dacb0")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR05"
 			(at 160.02 95.25 0)
 			(effects
 				(font
@@ -2178,7 +2178,7 @@
 		(instances
 			(project "hextrack"
 				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/b85208ae-6025-47c1-ac11-02f6f1e1bd30"
-					(reference "#PWR015")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)

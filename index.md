@@ -15,7 +15,7 @@ layout: home
 ![HexTrack]({{ "/assets/images/render.png" | absolute_url | append: cacheBust }})
 {: .no-border}
 
-An open-source 3D printable button-less trackball using the PMW3389 sensor.
+An open-source 3D printable trackball using the PMW3389 sensor.
 {: .no-border .center}
 
 <!-- [Firmware (Coming soon!)](/)

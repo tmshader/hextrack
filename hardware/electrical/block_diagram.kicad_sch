@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "HexTrack PCB")
-		(date "2025-01-09")
-		(rev "v0.0.1")
+		(date "2025-02-01")
+		(rev "v0.0.2")
 		(company "TMShader")
 		(comment 9 "HexTrack")
 	)
@@ -254,20 +254,26 @@
 		)
 	)
 	(junction
-		(at 134.62 92.71)
+		(at 149.86 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "38af8e38-db2f-49c2-baf7-944d9bc76967")
+		(uuid "34e8043d-acaa-48ff-a39a-eacb5d445709")
 	)
 	(junction
-		(at 162.56 92.71)
+		(at 177.8 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5318ab47-d227-498d-8f10-520eb95717ac")
 	)
+	(junction
+		(at 119.38 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "89021423-0e77-4536-8088-a7da421cf64d")
+	)
 	(wire
 		(pts
-			(xy 130.81 104.14) (xy 138.43 104.14)
+			(xy 115.57 116.84) (xy 153.67 116.84)
 		)
 		(stroke
 			(width 0)
@@ -277,7 +283,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 104.14) (xy 166.37 104.14)
+			(xy 173.99 91.44) (xy 181.61 91.44)
 		)
 		(stroke
 			(width 0)
@@ -287,17 +293,57 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 92.71) (xy 162.56 92.71)
+			(xy 146.05 80.01) (xy 177.8 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "424a90c0-f321-45e3-a6fe-9bd888759c22")
+		(uuid "22ebcf09-3b27-489f-8278-deed5c12e322")
 	)
 	(wire
 		(pts
-			(xy 158.75 106.68) (xy 166.37 106.68)
+			(xy 146.05 92.71) (xy 149.86 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37ecd0dd-3fc1-445f-b040-52829dbbee57")
+	)
+	(wire
+		(pts
+			(xy 149.86 91.44) (xy 149.86 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3cf0837a-bda2-435d-a3c2-bdc60af38fa8")
+	)
+	(wire
+		(pts
+			(xy 119.38 92.71) (xy 119.38 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58f2de84-e137-44ae-8396-bd3d20201f4c")
+	)
+	(wire
+		(pts
+			(xy 173.99 104.14) (xy 181.61 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "627b47fa-fd07-43da-a1e2-8e093ad35fb3")
+	)
+	(wire
+		(pts
+			(xy 173.99 93.98) (xy 181.61 93.98)
 		)
 		(stroke
 			(width 0)
@@ -307,7 +353,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 92.71) (xy 134.62 91.44)
+			(xy 119.38 92.71) (xy 119.38 91.44)
 		)
 		(stroke
 			(width 0)
@@ -317,7 +363,17 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 106.68) (xy 138.43 106.68)
+			(xy 119.38 92.71) (xy 123.19 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8032550c-0d5c-4de5-a6bf-b4ab5a59b93d")
+	)
+	(wire
+		(pts
+			(xy 115.57 119.38) (xy 153.67 119.38)
 		)
 		(stroke
 			(width 0)
@@ -327,7 +383,17 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 92.71) (xy 134.62 92.71)
+			(xy 173.99 128.27) (xy 181.61 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "884c0cf1-75fb-4462-a52f-48ae4dab0a2a")
+	)
+	(wire
+		(pts
+			(xy 115.57 92.71) (xy 119.38 92.71)
 		)
 		(stroke
 			(width 0)
@@ -337,7 +403,47 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 101.6) (xy 166.37 101.6)
+			(xy 173.99 133.35) (xy 181.61 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ac6db3e-5fb4-448e-9e2c-9f2df54bd5e6")
+	)
+	(wire
+		(pts
+			(xy 173.99 130.81) (xy 181.61 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb12f4d4-43d3-471f-bb31-bdef1afbc0fc")
+	)
+	(wire
+		(pts
+			(xy 149.86 92.71) (xy 153.67 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d47dcbf8-aa38-431a-8b15-5101f4f2e376")
+	)
+	(wire
+		(pts
+			(xy 153.67 105.41) (xy 119.38 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e064e47d-74fa-4fa0-812f-f91fa90d6eed")
+	)
+	(wire
+		(pts
+			(xy 173.99 88.9) (xy 181.61 88.9)
 		)
 		(stroke
 			(width 0)
@@ -347,7 +453,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 118.11) (xy 166.37 118.11)
+			(xy 173.99 106.68) (xy 181.61 106.68)
 		)
 		(stroke
 			(width 0)
@@ -357,7 +463,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 91.44) (xy 162.56 92.71)
+			(xy 177.8 78.74) (xy 177.8 80.01)
 		)
 		(stroke
 			(width 0)
@@ -367,7 +473,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 109.22) (xy 166.37 109.22)
+			(xy 173.99 96.52) (xy 181.61 96.52)
 		)
 		(stroke
 			(width 0)
@@ -377,17 +483,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 92.71) (xy 138.43 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fab4b569-d24d-452c-9b9b-2b2889063b9d")
-	)
-	(wire
-		(pts
-			(xy 162.56 92.71) (xy 166.37 92.71)
+			(xy 177.8 80.01) (xy 181.61 80.01)
 		)
 		(stroke
 			(width 0)
@@ -411,7 +507,7 @@
 	)
 	(symbol
 		(lib_id "power:+1V8")
-		(at 162.56 91.44 0)
+		(at 177.8 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -419,7 +515,7 @@
 		(dnp no)
 		(uuid "62873721-76dc-429e-8771-2529a0fd347c")
 		(property "Reference" "#PWR01"
-			(at 162.56 95.25 0)
+			(at 177.8 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -428,7 +524,7 @@
 			)
 		)
 		(property "Value" "+1V8"
-			(at 162.56 87.63 0)
+			(at 177.8 74.93 0)
 			(effects
 				(font
 					(face "Lexend")
@@ -437,7 +533,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 162.56 91.44 0)
+			(at 177.8 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -446,7 +542,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 162.56 91.44 0)
+			(at 177.8 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -455,7 +551,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+1V8\""
-			(at 162.56 91.44 0)
+			(at 177.8 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -476,16 +572,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VBUS")
-		(at 134.62 91.44 0)
+		(lib_id "power:+1V8")
+		(at 149.86 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d4718a06-1f6f-4030-8801-8e2c91f5f1cf")
-		(property "Reference" "#PWR09"
-			(at 134.62 95.25 0)
+		(uuid "c8463a56-1144-4905-af9f-7ba559d2e918")
+		(property "Reference" "#PWR03"
+			(at 149.86 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -493,8 +589,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VBUS"
-			(at 134.62 87.63 0)
+		(property "Value" "+3V3"
+			(at 149.86 87.63 0)
 			(effects
 				(font
 					(face "Lexend")
@@ -503,7 +599,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 134.62 91.44 0)
+			(at 149.86 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -512,7 +608,73 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 91.44 0)
+			(at 149.86 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+1V8\""
+			(at 149.86 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7cae46fd-a19b-4fdd-8d69-316fd1bc7d21")
+		)
+		(instances
+			(project "hextrack"
+				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 119.38 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d4718a06-1f6f-4030-8801-8e2c91f5f1cf")
+		(property "Reference" "#PWR02"
+			(at 119.38 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 119.38 87.63 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -521,7 +683,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 134.62 91.44 0)
+			(at 119.38 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -535,15 +697,15 @@
 		(instances
 			(project "hextrack"
 				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a"
-					(reference "#PWR09")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(sheet
-		(at 138.43 86.36)
-		(size 20.32 38.1)
+		(at 153.67 86.36)
+		(size 20.32 50.8)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -553,7 +715,7 @@
 		)
 		(uuid "1feb3cee-82cd-45fc-9a10-745f1cbe257b")
 		(property "Sheetname" "MCU"
-			(at 138.43 85.09 0)
+			(at 153.67 85.09 0)
 			(effects
 				(font
 					(face "Lexend")
@@ -563,7 +725,7 @@
 			)
 		)
 		(property "Sheetfile" "mcu.kicad_sch"
-			(at 138.43 125.73 0)
+			(at 153.67 138.43 0)
 			(effects
 				(font
 					(face "Lexend")
@@ -573,7 +735,7 @@
 			)
 		)
 		(pin "USB_D-" bidirectional
-			(at 138.43 106.68 180)
+			(at 153.67 119.38 180)
 			(effects
 				(font
 					(face "Lexend")
@@ -584,7 +746,7 @@
 			(uuid "f65e5260-2442-4f09-a1a3-e39668f67a31")
 		)
 		(pin "USB_D+" bidirectional
-			(at 138.43 104.14 180)
+			(at 153.67 116.84 180)
 			(effects
 				(font
 					(face "Lexend")
@@ -595,7 +757,7 @@
 			(uuid "8b1ab937-2a6f-4a72-9c6f-daf188365c02")
 		)
 		(pin "SCLK" output
-			(at 158.75 104.14 0)
+			(at 173.99 91.44 0)
 			(effects
 				(font
 					(face "Lexend")
@@ -606,7 +768,7 @@
 			(uuid "35713b77-8235-4ca8-9c24-94859da97aaf")
 		)
 		(pin "MISO" input
-			(at 158.75 109.22 0)
+			(at 173.99 96.52 0)
 			(effects
 				(font
 					(face "Lexend")
@@ -617,7 +779,7 @@
 			(uuid "d728d7ef-562d-4ccb-915e-d29498b8bcac")
 		)
 		(pin "MOSI" output
-			(at 158.75 106.68 0)
+			(at 173.99 93.98 0)
 			(effects
 				(font
 					(face "Lexend")
@@ -628,7 +790,7 @@
 			(uuid "01127823-ecbb-48b4-99d8-d8a7c1b692d5")
 		)
 		(pin "~{CS}" output
-			(at 158.75 101.6 0)
+			(at 173.99 88.9 0)
 			(effects
 				(font
 					(face "Lexend")
@@ -639,7 +801,7 @@
 			(uuid "afd9e679-bda7-4498-8f4d-5906e75d0ba4")
 		)
 		(pin "MOTION" input
-			(at 158.75 118.11 0)
+			(at 173.99 106.68 0)
 			(effects
 				(font
 					(face "Lexend")
@@ -650,7 +812,7 @@
 			(uuid "807c8646-7ba9-4856-b197-f93b4cabdc3f")
 		)
 		(pin "VBUS" output
-			(at 138.43 92.71 180)
+			(at 153.67 92.71 180)
 			(effects
 				(font
 					(face "Lexend")
@@ -660,8 +822,8 @@
 			)
 			(uuid "52e1aa45-f0d7-4212-ab6d-abce3b7b2889")
 		)
-		(pin "VDD" output
-			(at 158.75 92.71 0)
+		(pin "Left_Switch" output
+			(at 173.99 128.27 0)
 			(effects
 				(font
 					(face "Lexend")
@@ -669,29 +831,21 @@
 				)
 				(justify right)
 			)
-			(uuid "940a172c-13ff-431d-99f4-3c8fe6f7ff43")
+			(uuid "fc787735-3202-441f-8534-ece7e2d9721a")
 		)
-		(instances
-			(project "hextrack"
-				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a"
-					(page "4")
+		(pin "Right_Switch" output
+			(at 173.99 130.81 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
 				)
+				(justify right)
 			)
+			(uuid "53d77070-479a-40ff-a76f-febc2b68209d")
 		)
-	)
-	(sheet
-		(at 166.37 86.36)
-		(size 20.32 38.1)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "970bbcdd-a4ab-4f8a-b2e3-65e4c240b91d")
-		(property "Sheetname" "Sensor"
-			(at 166.37 85.09 0)
+		(pin "VDDH" output
+			(at 153.67 105.41 180)
 			(effects
 				(font
 					(face "Lexend")
@@ -699,82 +853,29 @@
 				)
 				(justify left)
 			)
+			(uuid "674d4220-e0e9-4b0a-bc4d-097b111b6f6f")
 		)
-		(property "Sheetfile" "sensor.kicad_sch"
-			(at 166.37 125.73 0)
+		(pin "VDD" output
+			(at 173.99 104.14 0)
 			(effects
 				(font
 					(face "Lexend")
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
+			(uuid "f6c5c030-52e1-4a7e-9df8-a9325442273f")
 		)
-		(pin "+1.8V" input
-			(at 166.37 92.71 180)
+		(pin "LED_DATA" output
+			(at 173.99 133.35 0)
 			(effects
 				(font
 					(face "Lexend")
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
-			(uuid "a6b98a6d-eb53-485c-8b5a-a4e55a942a31")
-		)
-		(pin "MOTION" output
-			(at 166.37 118.11 180)
-			(effects
-				(font
-					(face "Lexend")
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "c10dee6a-6488-44e1-b435-8e4e238a7bd3")
-		)
-		(pin "SCLK" input
-			(at 166.37 104.14 180)
-			(effects
-				(font
-					(face "Lexend")
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "a5b9c74e-4d71-4cfe-8986-28f8f7571712")
-		)
-		(pin "MOSI" input
-			(at 166.37 106.68 180)
-			(effects
-				(font
-					(face "Lexend")
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "f4040a5b-ea1a-4194-a12c-7f4151f51060")
-		)
-		(pin "~{CS}" input
-			(at 166.37 101.6 180)
-			(effects
-				(font
-					(face "Lexend")
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "7ef9d7e6-0ca9-48fc-9e2e-7a9917839dd0")
-		)
-		(pin "MISO" output
-			(at 166.37 109.22 180)
-			(effects
-				(font
-					(face "Lexend")
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "5f1009f4-5b96-4ff9-b1e0-637a0cde8bfd")
+			(uuid "65942ad9-89a9-4f7e-832a-334397fdf87e")
 		)
 		(instances
 			(project "hextrack"
@@ -785,8 +886,8 @@
 		)
 	)
 	(sheet
-		(at 110.49 119.38)
-		(size 20.32 5.08)
+		(at 123.19 73.66)
+		(size 22.86 25.4)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -794,9 +895,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "b1b45fc2-b729-4747-b7cc-9958adb1922a")
-		(property "Sheetname" "Misc"
-			(at 110.49 118.11 0)
+		(uuid "47cc176e-3777-4b9f-8c2c-1fa80616066f")
+		(property "Sheetname" "Regulators"
+			(at 123.19 72.39 0)
 			(effects
 				(font
 					(face "Lexend")
@@ -805,8 +906,268 @@
 				(justify left)
 			)
 		)
-		(property "Sheetfile" "misc.kicad_sch"
-			(at 110.49 125.73 0)
+		(property "Sheetfile" "regulators.kicad_sch"
+			(at 123.19 100.33 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VBUS" input
+			(at 123.19 92.71 180)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "86efe218-b2b9-4b4d-a438-9838d130b185")
+		)
+		(pin "+3.3V" output
+			(at 146.05 92.71 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "b47fd9c3-a796-436d-bac7-cfd16a4f5a6a")
+		)
+		(pin "+1.8V" output
+			(at 146.05 80.01 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "fb1ebf69-f67b-4058-8775-2e9905ded54b")
+		)
+		(instances
+			(project "hextrack"
+				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 181.61 124.46)
+		(size 20.32 12.7)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6ef21b2c-1eef-4c3e-9967-6fcfcd6d64cd")
+		(property "Sheetname" "Switches"
+			(at 181.61 123.19 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Sheetfile" "switches.kicad_sch"
+			(at 181.61 138.43 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Left_Switch" input
+			(at 181.61 128.27 180)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "b7afc00e-37f5-4cc8-8aae-a2385c239716")
+		)
+		(pin "Right_Switch" input
+			(at 181.61 130.81 180)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d39c4b52-926d-42db-bfed-1ba18fe46755")
+		)
+		(pin "LED_DIN" input
+			(at 181.61 133.35 180)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "bee381d9-e94c-45a9-9c0b-bed16e32927a")
+		)
+		(instances
+			(project "hextrack"
+				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 181.61 73.66)
+		(size 20.32 38.1)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "970bbcdd-a4ab-4f8a-b2e3-65e4c240b91d")
+		(property "Sheetname" "Sensor"
+			(at 181.61 72.39 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Sheetfile" "sensor.kicad_sch"
+			(at 181.61 113.03 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+1.8V" input
+			(at 181.61 80.01 180)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a6b98a6d-eb53-485c-8b5a-a4e55a942a31")
+		)
+		(pin "MOTION" output
+			(at 181.61 106.68 180)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c10dee6a-6488-44e1-b435-8e4e238a7bd3")
+		)
+		(pin "SCLK" input
+			(at 181.61 91.44 180)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a5b9c74e-4d71-4cfe-8986-28f8f7571712")
+		)
+		(pin "MOSI" input
+			(at 181.61 93.98 180)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f4040a5b-ea1a-4194-a12c-7f4151f51060")
+		)
+		(pin "~{CS}" input
+			(at 181.61 88.9 180)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "7ef9d7e6-0ca9-48fc-9e2e-7a9917839dd0")
+		)
+		(pin "MISO" output
+			(at 181.61 96.52 180)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "5f1009f4-5b96-4ff9-b1e0-637a0cde8bfd")
+		)
+		(pin "VDDIO" input
+			(at 181.61 104.14 180)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f31eed9b-fd81-42aa-bdfe-75445340baf7")
+		)
+		(instances
+			(project "hextrack"
+				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 123.19 132.08)
+		(size 22.86 5.08)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b1b45fc2-b729-4747-b7cc-9958adb1922a")
+		(property "Sheetname" "Hardware"
+			(at 123.19 130.81 0)
+			(effects
+				(font
+					(face "Lexend")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Sheetfile" "hardware.kicad_sch"
+			(at 123.19 138.43 0)
 			(effects
 				(font
 					(face "Lexend")
@@ -818,14 +1179,14 @@
 		(instances
 			(project "hextrack"
 				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a"
-					(page "6")
+					(page "8")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 110.49 86.36)
-		(size 20.32 25.4)
+		(at 95.25 86.36)
+		(size 20.32 38.1)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -835,7 +1196,7 @@
 		)
 		(uuid "b85208ae-6025-47c1-ac11-02f6f1e1bd30")
 		(property "Sheetname" "USB-C"
-			(at 110.49 85.09 0)
+			(at 95.25 85.09 0)
 			(effects
 				(font
 					(face "Lexend")
@@ -845,7 +1206,7 @@
 			)
 		)
 		(property "Sheetfile" "usb_c.kicad_sch"
-			(at 110.49 113.03 0)
+			(at 95.25 125.73 0)
 			(effects
 				(font
 					(face "Lexend")
@@ -855,7 +1216,7 @@
 			)
 		)
 		(pin "D+" bidirectional
-			(at 130.81 104.14 0)
+			(at 115.57 116.84 0)
 			(effects
 				(font
 					(face "Lexend")
@@ -866,7 +1227,7 @@
 			(uuid "61580866-4748-40ad-850c-69dcdfd4ae61")
 		)
 		(pin "D-" bidirectional
-			(at 130.81 106.68 0)
+			(at 115.57 119.38 0)
 			(effects
 				(font
 					(face "Lexend")
@@ -877,7 +1238,7 @@
 			(uuid "b0911806-8452-43af-a858-2464fbdcdd01")
 		)
 		(pin "VBUS" output
-			(at 130.81 92.71 0)
+			(at 115.57 92.71 0)
 			(effects
 				(font
 					(face "Lexend")

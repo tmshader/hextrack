@@ -33,7 +33,7 @@ jobs:
     with:
       PROJECT_NAME: "hextrack"
       PROJECT_PATH: "hardware/electrical/"
-      RENDER_ACTION_ID: 0
+      RENDER_ACTION_ID: 12683041655
 
   build:
     runs-on: ubuntu-latest

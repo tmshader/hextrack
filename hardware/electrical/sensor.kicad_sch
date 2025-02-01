@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "HexTrack PCB")
-		(date "2025-01-09")
-		(rev "v0.0.1")
+		(date "2025-02-01")
+		(rev "v0.0.2")
 		(company "TMShader")
 		(comment 9 "HexTrack")
 	)
@@ -1103,7 +1103,7 @@
 		)
 		(uuid "45e3f601-da6c-4082-a048-6bd0b416a081")
 	)
-	(hierarchical_label "+1.8V"
+	(hierarchical_label "VDDIO"
 		(shape input)
 		(at 82.55 92.71 180)
 		(fields_autoplaced yes)
@@ -1151,7 +1151,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00fc3fd1-e376-4bb9-bf7b-0858919c77c4")
-		(property "Reference" "C5"
+		(property "Reference" "C25"
 			(at 172.72 124.4599 0)
 			(effects
 				(font
@@ -1219,7 +1219,7 @@
 		(instances
 			(project "hextrack"
 				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/970bbcdd-a4ab-4f8a-b2e3-65e4c240b91d"
-					(reference "C5")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -1234,7 +1234,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "012e77b9-1c55-400a-b81f-ee4b5fbfe5f7")
-		(property "Reference" "C2"
+		(property "Reference" "C22"
 			(at 104.14 97.7899 0)
 			(effects
 				(font
@@ -1302,7 +1302,7 @@
 		(instances
 			(project "hextrack"
 				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/970bbcdd-a4ab-4f8a-b2e3-65e4c240b91d"
-					(reference "C2")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -1317,7 +1317,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "14892955-5b71-408d-b8d6-12b14cea7bc8")
-		(property "Reference" "C1"
+		(property "Reference" "C21"
 			(at 90.17 97.7899 0)
 			(effects
 				(font
@@ -1385,7 +1385,7 @@
 		(instances
 			(project "hextrack"
 				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/970bbcdd-a4ab-4f8a-b2e3-65e4c240b91d"
-					(reference "C1")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -1400,7 +1400,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1df5131c-4010-4f09-937e-ce5236ead934")
-		(property "Reference" "R3"
+		(property "Reference" "R5"
 			(at 116.84 107.95 0)
 			(effects
 				(font
@@ -1467,7 +1467,7 @@
 		(instances
 			(project "hextrack"
 				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/970bbcdd-a4ab-4f8a-b2e3-65e4c240b91d"
-					(reference "R3")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -1482,7 +1482,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "39e79c22-5dca-4236-b5cf-79f53b445c94")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR033"
 			(at 86.36 110.49 0)
 			(effects
 				(font
@@ -1533,7 +1533,7 @@
 		(instances
 			(project "hextrack"
 				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/970bbcdd-a4ab-4f8a-b2e3-65e4c240b91d"
-					(reference "#PWR02")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -1548,7 +1548,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4bfd3621-55b3-46ad-bec1-830e944d1391")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR038"
 			(at 168.91 137.16 0)
 			(effects
 				(font
@@ -1599,7 +1599,7 @@
 		(instances
 			(project "hextrack"
 				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/970bbcdd-a4ab-4f8a-b2e3-65e4c240b91d"
-					(reference "#PWR07")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -1614,7 +1614,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "53e7f929-42dc-4d41-a5ac-16801c6e751e")
-		(property "Reference" "C3"
+		(property "Reference" "C23"
 			(at 196.85 97.7899 0)
 			(effects
 				(font
@@ -1682,7 +1682,7 @@
 		(instances
 			(project "hextrack"
 				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/970bbcdd-a4ab-4f8a-b2e3-65e4c240b91d"
-					(reference "C3")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -1698,7 +1698,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5f6fad9e-f1be-47d6-bb3f-f86cffe6d383")
-		(property "Reference" "R2"
+		(property "Reference" "R4"
 			(at 168.91 97.79 90)
 			(effects
 				(font
@@ -1763,7 +1763,7 @@
 		(instances
 			(project "hextrack"
 				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/970bbcdd-a4ab-4f8a-b2e3-65e4c240b91d"
-					(reference "R2")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -1778,7 +1778,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "74be5c70-520b-4c29-97de-cc4abf4be623")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR034"
 			(at 100.33 110.49 0)
 			(effects
 				(font
@@ -1829,7 +1829,7 @@
 		(instances
 			(project "hextrack"
 				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/970bbcdd-a4ab-4f8a-b2e3-65e4c240b91d"
-					(reference "#PWR03")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -1844,7 +1844,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7821994b-97b4-4706-94b9-fe450e501211")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR039"
 			(at 182.88 137.16 0)
 			(effects
 				(font
@@ -1895,7 +1895,7 @@
 		(instances
 			(project "hextrack"
 				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/970bbcdd-a4ab-4f8a-b2e3-65e4c240b91d"
-					(reference "#PWR08")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -1910,7 +1910,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "897d308c-8804-4b71-9dec-207f4a4f021f")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR036"
 			(at 207.01 110.49 0)
 			(effects
 				(font
@@ -1961,7 +1961,7 @@
 		(instances
 			(project "hextrack"
 				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/970bbcdd-a4ab-4f8a-b2e3-65e4c240b91d"
-					(reference "#PWR05")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -1976,7 +1976,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9513c5af-a6b7-4dc3-8176-c4a803a6bf9d")
-		(property "Reference" "C4"
+		(property "Reference" "C24"
 			(at 210.82 97.7899 0)
 			(effects
 				(font
@@ -2044,7 +2044,7 @@
 		(instances
 			(project "hextrack"
 				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/970bbcdd-a4ab-4f8a-b2e3-65e4c240b91d"
-					(reference "C4")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -2060,7 +2060,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "970e86b1-7d10-41c1-9567-7c419935e39c")
-		(property "Reference" "NS1"
+		(property "Reference" "U5"
 			(at 148.59 85.09 0)
 			(effects
 				(font
@@ -2158,7 +2158,7 @@
 		(instances
 			(project "hextrack"
 				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/970bbcdd-a4ab-4f8a-b2e3-65e4c240b91d"
-					(reference "NS1")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -2173,7 +2173,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9c3911ea-90bc-45f1-ad12-8006ca28b3b1")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR035"
 			(at 193.04 110.49 0)
 			(effects
 				(font
@@ -2224,7 +2224,7 @@
 		(instances
 			(project "hextrack"
 				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/970bbcdd-a4ab-4f8a-b2e3-65e4c240b91d"
-					(reference "#PWR04")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -2239,7 +2239,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a04c89f1-da7d-48bf-93d6-14eb50ad0103")
-		(property "Reference" "R1"
+		(property "Reference" "R3"
 			(at 128.27 97.79 90)
 			(effects
 				(font
@@ -2304,7 +2304,7 @@
 		(instances
 			(project "hextrack"
 				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/970bbcdd-a4ab-4f8a-b2e3-65e4c240b91d"
-					(reference "R1")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -2319,7 +2319,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e5bd14e6-a496-4c4f-9d3b-6a22ee9988ce")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR037"
 			(at 148.59 130.81 0)
 			(effects
 				(font
@@ -2370,7 +2370,7 @@
 		(instances
 			(project "hextrack"
 				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/970bbcdd-a4ab-4f8a-b2e3-65e4c240b91d"
-					(reference "#PWR06")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -2385,7 +2385,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "feaa06d5-aca7-42fa-bfb0-b4e887026b90")
-		(property "Reference" "C6"
+		(property "Reference" "C26"
 			(at 186.69 124.4599 0)
 			(effects
 				(font
@@ -2453,7 +2453,7 @@
 		(instances
 			(project "hextrack"
 				(path "/e03ae3c5-ddb7-48ac-a408-9dcc58a57689/9836e963-ec32-4c01-99da-5c973017755a/970bbcdd-a4ab-4f8a-b2e3-65e4c240b91d"
-					(reference "C6")
+					(reference "C26")
 					(unit 1)
 				)
 			)
